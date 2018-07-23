@@ -7,8 +7,7 @@ As a sample, the file _ohare2014.csv_ is provided, containing the LCD data from 
 
 ```{
 source("noaa_csv.R")
-noaa.csv("ohare2014.csv")->dat
-ggplot(dat,aes(x=OBS.N,y=TEMP))+geom_line()
+noaa.csv("ohare2014.csv",2014)
 ```
 
-So, funny thing about this being a 'visualizer'.  You might notice how the visualization of the data comes from ggplot -- not the _noaa.csv_ function itself.  The function, at current, only outputs a 'nice' data frame with the temperature data from the LCD data.  I'm wokring on building the graphs directly into the _noaa.csv_ function.  Coming soon!!
+More to come!  The goal:  "SEE" local weather data.  (Why not call it weather data?  'Climatological'?  Is that somehow different??
